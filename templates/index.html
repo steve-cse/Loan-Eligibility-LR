@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Spam Filtering using Bayesian Network</title>
+    <title>Loan Eligibility Prediction using Logistic Regression</title>
     <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}">
     <!-- Bootstrap CSS -->
     <link
@@ -17,28 +17,41 @@
       <div class="w-100" style="max-width: 400px;">
         <div class="card">
           <div class="card-body">
-            <h2 class="text-center mb-4">🤖 Spam-Ham Filtering</h2>
+            <h3 class="text-center mb-4">🤑 Loan Eligibility Prediction</h3>
             <form action="/predict" method="POST">
-              <label for="email_textarea" class="form-label">
-                Enter Email Content
+              <label for="credit_input_form" class="form-label">
+                Enter Credit History
               </label>
-              <textarea
-                name="email_input"
-                class="form-control"
-                id="email_textarea"
-                rows="3"
-                required
-              ></textarea>
+              <select name="credit_input" class="form-control" id="creditFormControlSelect">
+                <option>0</option>
+                <option>1</option>
+              </select>
 
               <br />
-              <label for="email_textarea" class="form-label w-100 text-center" >
+              <label for="education_input_form" class="form-label">
+                Enter Education Status
+              </label>
+              <select name="education_input" class="form-control" id="educationFormControlSelect">
+                <option>Graduate</option>
+                <option>Not Graduate</option>
+              </select>
+              <br/>
+              <label for="education_input_form" class="form-label">
+                Enter Gender
+              </label>
+              <select name="gender_input" class="form-control" id="educationFormControlSelect">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+              <br/>
+              <label class="form-label w-100 text-center" >
                {{result}}
               </label>
               
               <br />
 
               <button
-                class="w-100 container my-3 btn btn-warning"
+                class="w-100 container my-3 btn btn-success"
                 type="submit"
               >
                 Predict
