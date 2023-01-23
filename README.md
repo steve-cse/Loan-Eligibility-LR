@@ -10,8 +10,8 @@ Predicting loan eligibility is a crucial task for financial institutions. Our mo
 ## Usage
 1. Clone the repository and install the necessary dependencies
 
-### `git clone https://github.com/steve-cse/Loan-Eligibility-LR.git`
-### `git clone pip install -r requirements.txt`
+- `git clone https://github.com/steve-cse/Loan-Eligibility-LR.git`
+- `git clone pip install -r requirements.txt`
 
 
 2. Run the model on your data
